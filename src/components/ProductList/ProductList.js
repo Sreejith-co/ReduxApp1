@@ -3,15 +3,10 @@ import "./ProductList.css";
 import products from "../api/products.json";
 import { BeforeCart } from "./cartButtons/BeforeCart";
 import { AfterCart } from "./cartButtons/AfterCart";
+import { useSelector, useDispatch } from "react-redux";
 
 export const ProductList = () => {
-  const [count, setCount] = useState(0);
-
-  const addToCart = () => {
-    setCount(1);
-  };
-
-  console.log(count);
+  const { cartCount } = useSelector((state) => state.cart);
 
   return (
     <section className="container">
@@ -20,7 +15,7 @@ export const ProductList = () => {
           <img src={product?.image} alt="" />
           <h3>{product?.title}</h3>
 
-          {count > 0 ? <AfterCart /> : <BeforeCart addToCart={addToCart} />}
+          {cartCount > 0 ? <AfterCart /> : <BeforeCart />}
         </div>
       ))}
     </section>
