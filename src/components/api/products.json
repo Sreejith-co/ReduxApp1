@@ -1,0 +1,17 @@
+[
+    {
+        "id":0,
+        "image":"https://imgur.com/KQsYZxm.png",
+       "title":"Blackview BV8800 Pro"
+    },
+    {
+        "id":1,
+        "image":"https://imgur.com/ls5WHaE.png",
+        "title":"iPhone 15 Pro Max"
+    },
+    {
+        "id":2,    
+        "image": "https://imgur.com/YPL6A1h.png",
+        "title":"Samsung Galaxy S23 Ultra"
+    }
+]
